@@ -76,7 +76,7 @@ def load_raw_stats():
     try:
         if os.path.exists(DB_PATH) and os.path.exists(CSV_PATH):
             conn = sqlite3.connect(DB_PATH)
-            df_s = pd.read_sql_query("SELECT CustomerId, Tenure, MonthlyCharges, TotalCharges, Churn FROM services", conn)
+            df_s = pd.read_sql_query("SELECT * FROM services", conn)
             conn.close()
             df_d = pd.read_csv(CSV_PATH)
             df = pd.merge(df_d, df_s, on="CustomerId")
