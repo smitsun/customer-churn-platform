@@ -27,3 +27,11 @@ models/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Learning guides and masterclass PDFs (kept locally only)
+Complete_Project_Guide.md
+Complete_Project_Guide.pdf
+Complete_Beginners_Masterclass.md
+Complete_Beginners_Masterclass.pdf
+scripts/generate_complete_guide.py
+scripts/generate_masterclass_guide.py
